@@ -75,7 +75,12 @@ The Insta JAR includes insta-api.
 
 ## License
 
-This project is licensed under the MIT License. You are free to contribute, distribute, fork, or reuse any part.
+Original Insta material owned by Deluxeg4 is all rights reserved. Use, copying,
+modification, distribution, publication, sublicensing, and sale require prior
+written permission.
+
+This restriction does not revoke permissions already granted for Nami-derived
+or other third-party code. See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
 
 ---
 

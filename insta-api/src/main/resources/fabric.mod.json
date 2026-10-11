@@ -5,7 +5,7 @@
 
   "name": "Insta API",
   "description": "The API for Insta.",
-  "license": "MIT",
+  "license": "All Rights Reserved",
   "environment": "*",
   "entrypoints": {
     "client": [

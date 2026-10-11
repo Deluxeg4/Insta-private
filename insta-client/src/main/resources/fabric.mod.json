@@ -5,7 +5,7 @@
   "name": "Insta",
   "description": "A high-performance, modular client for anarchy servers.",
   "authors": ["Deluxeg4"],
-  "license": "MIT",
+  "license": "All Rights Reserved",
   "environment": "*",
   "entrypoints": {
     "client": [
