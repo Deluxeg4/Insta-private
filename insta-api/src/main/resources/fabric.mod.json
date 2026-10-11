@@ -9,7 +9,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "instadevelopment.kiriyaga.api.InstaApi"
+      "instadevelopment.deluxeg4.api.InstaApi"
     ]
   },
   "mixins": [

@@ -4,12 +4,12 @@
   "version": "${version}",
   "name": "Insta",
   "description": "A high-performance, modular client for anarchy servers.",
-  "authors": ["Kiriyaga"],
+  "authors": ["Deluxeg4"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "instadevelopment.kiriyaga.insta.Insta"
+      "instadevelopment.deluxeg4.insta.Insta"
     ]
   },
   "mixins": [

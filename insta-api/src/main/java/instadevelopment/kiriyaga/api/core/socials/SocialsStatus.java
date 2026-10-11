@@ -1,6 +1,0 @@
-package instadevelopment.kiriyaga.api.core.socials;
-
-public enum SocialsStatus {
-    FRIEND,
-    ENEMY
-}
