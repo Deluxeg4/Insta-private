@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "insta-client",
+  "version": "${version}",
+  "name": "Insta",
+  "description": "A high-performance, modular client for anarchy servers.",
+  "authors": ["Kiriyaga"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "instadevelopment.kiriyaga.insta.Insta"
+    ]
+  },
+  "mixins": [
+    "insta.mixins.json",
+    "insta.mixins.sodium.json"
+  ],
+  "accessWidener": "META-INF/insta.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "fabric": "*",
+    "minecraft": "1.21.11",
+    "insta-api": "*"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "package": "instadevelopment.kiriyaga.api.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "DuckChatComponent",
+    "DuckClientLevel",
+    "DuckFont",
+    "DuckMultiPlayerGameMode",
+    "MixinClientPacketListener",
+    "MixinCommandSuggestions",
+    "MixinKeyboardHandler",
+    "MixinLocalPlayer",
+    "MixinMinecraft",
+    "MixinMouseHandler",
+    "MixinMultiPlayerGameMode"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "DuckAgeableMob",
+    "DuckAnimal",
+    "MixinEntity",
+    "MixinLivingEntity"
+  ]
+}

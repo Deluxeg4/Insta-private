@@ -1,0 +1,21 @@
+plugins {
+	id 'java'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.fabricmc.net' }
+    }
+}
+
+tasks.register("client") {
+    group = "run"
+    dependsOn(":insta-client:runClient")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}

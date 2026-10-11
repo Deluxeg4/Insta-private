@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "package": "instadevelopment.kiriyaga.insta.mixin.sodium",
+  "client": [
+    "SodiumWorldRendererMixin"
+  ]
+}

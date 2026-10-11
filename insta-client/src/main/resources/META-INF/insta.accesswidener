@@ -1,0 +1,8 @@
+accessWidener v1 named
+
+accessible class net/minecraft/client/resources/SkinManager$TextureCache
+accessible class net/minecraft/client/particle/FireworkParticles$SparkParticle
+accessible class net/minecraft/network/protocol/game/ServerboundInteractPacket$ActionType
+accessible class net/minecraft/network/protocol/game/ServerboundInteractPacket$InteractionAtLocationAction
+accessible class net/minecraft/network/protocol/game/ServerboundInteractPacket$Action
+accessible class net/minecraft/client/multiplayer/ClientChunkCache$Storage

@@ -1,0 +1,46 @@
+package instadevelopment.kiriyaga.insta.impl.command;
+
+import instadevelopment.kiriyaga.api.annotation.RegisterCommand;
+import instadevelopment.kiriyaga.api.model.command.Command;
+import instadevelopment.kiriyaga.api.model.command.CommandRoute;
+import net.minecraft.network.chat.MutableComponent;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import static instadevelopment.kiriyaga.api.InstaApi.*;
+
+@RegisterCommand
+public class HelpCommand extends Command {
+
+    public HelpCommand() {
+        super("help");
+    }
+
+    @Override
+    public CommandRoute[] getRoutes() {
+        return new CommandRoute[] {
+                new CommandRoute(null)
+        };
+    }
+
+    @Override
+    public void execute(String route, Object[] args) {
+        List<Command> cmds = COMMAND_SERVICE.getStorage().getCommands();
+
+        if (cmds.isEmpty()) {
+            CHAT_SERVICE.sendPersistent(this.getName(), CAT_FORMAT.format("No commands registered."));
+            return;
+        }
+
+        String displayText = cmds.stream().filter(c -> c.getName() != null).map(this::getDisplay).collect(Collectors.joining(", "));
+
+        MutableComponent message = CAT_FORMAT.format("{gray}Available commands: " + displayText + "{white}.");
+        CHAT_SERVICE.sendPersistent(this.getName(), message);
+    }
+
+    private String getDisplay(Command command) {
+        String display = command.getName().replace(" ", "");
+        return "{global}" + display + "{gray}";
+    }
+}
